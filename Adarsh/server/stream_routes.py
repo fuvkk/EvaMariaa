@@ -24,17 +24,9 @@ routes = web.RouteTableDef()
 async def root_route_handler(_):
     return web.json_response(
         {
-            "server_status": "running",
-            "uptime": get_readable_time(time.time() - StartTime),
-            "telegram_bot": "@" + StreamBot.username,
-            "connected_bots": len(multi_clients),
-            "loads": dict(
-                ("bot" + str(c + 1), l)
-                for c, (_, l) in enumerate(
-                    sorted(work_loads.items(), key=lambda x: x[1], reverse=True)
-                )
-            ),
-            "version": __version__,
+
+This is the official site of Dotex Hub. You can download and stream movies and series here. Running time - get_readable_time(time.time() - StartTime). All Rights Reserved - Dotex Hub 2022 © 
+            
         }
     )
 
