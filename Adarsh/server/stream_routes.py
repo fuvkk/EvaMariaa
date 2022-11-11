@@ -25,7 +25,7 @@ async def root_route_handler(_):
     return web.json_response(
         {
 
-This is the official site of Dotex Hub. You can download and stream movies and series here. Running time - get_readable_time(time.time() - StartTime). All Rights Reserved - Dotex Hub 2022 © 
+"This is the official site of Dotex Hub. You can download and stream movies and series here. Running time - get_readable_time(time.time() - StartTime). All Rights Reserved - Dotex Hub 2022 ©" 
             
         }
     )
