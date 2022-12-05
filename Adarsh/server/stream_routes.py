@@ -24,13 +24,7 @@ routes = web.RouteTableDef()
 async def root_route_handler(_):
     return web.json_response(
         {
-
-"server_status": "running",
-            "uptime": get_readable_time(time.time() - StartTime),
-            "telegram": "DotexHub",
-            "connected": len(multi_clients),
-            
-            
+"This_is_the_official_site_of_Dotex_Hub."
         }
     )
 
