@@ -29,13 +29,7 @@ async def root_route_handler(_):
             "uptime": get_readable_time(time.time() - StartTime),
             "telegram": "DotexHub",
             "connected": len(multi_clients),
-            "loads": dict(
-                ("bot" + str(c + 1), l)
-                for c, (_, l) in enumerate(
-                    sorted(work_loads.items(), key=lambda x: x[1], reverse=True)
-                )
-            ),
-            "version": __version__,
+            
             
         }
     )
